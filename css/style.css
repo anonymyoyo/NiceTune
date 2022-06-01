@@ -1,0 +1,206 @@
+*
+{
+    font-family: 'poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* Entete ... baniere logo et titre */
+
+.baniere_logo, .baniere_titre
+{
+    display: inline-block;
+}
+
+.barre_separation
+{
+    list-style: none;
+    border: 1px solid rgba(21, 21, 78, 0.582);
+    width: 90%;
+}
+
+.navigation ul li
+{
+    display: inline;
+    margin-right: 54px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+
+body
+{
+    background: linear-gradient(45deg, rgb(64, 64, 224), rgb(255, 255, 255));
+}
+
+.corps
+{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logomenu1
+{
+    background-color: rgb(255, 255, 255);
+    float: right;
+    height: 30px;
+    width: 40px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logomenu2
+{
+    height: 35px;
+    width: 33px;
+    border-radius: 100%;
+    background-color: rgb(64, 64, 184);
+}
+
+.menu
+{
+    margin-top: 0px;
+    position: relative;
+    height: 100vh;
+    width: 40%;
+    padding: 58px;
+    transform: translate(-500px);
+    transition: 0.5s;
+    background-color: rgb(64, 64, 224);
+}
+
+.menu li
+{
+    list-style: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.showmenu
+{
+    transform: translateX(0);
+}
+
+.menu li:last-child
+{
+    border-bottom: none;
+
+}
+
+.menu li :first-child a
+{
+    font-weight: bold;
+}
+
+.menu li a
+{
+    color: snow;
+    text-decoration: none;
+    font-size: 20px;
+    transition: font-weight 1s;
+}
+/* transition 600px */
+.menu li a:hover
+{
+    font-weight: bold;
+}
+
+/* reglage de l'affichage 
+    en fonction de la taille de l'ecran */
+
+ @media screen and (min-width:1000px) 
+{
+    .menu
+    {
+        width: 500px;
+    }    
+}
+
+@media screen and (max-width:600px) 
+{
+    .menu li a
+    {
+        font-size: 16px;
+    }    
+} 
+
+/* section reservee au player de music
+....
+noter bien ce n'est que la partie fontend */
+
+ .div
+{
+    position: absolute;
+    top: 0px;
+    left: 300px;
+    width: 250px;
+    height: 30px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: rgba(64, 64, 224, 0.075);
+    box-shadow: 0 50px 80px rgba(0,0,0, 0.25);
+} 
+
+.div, .lecteur
+{
+    display: linline-block;
+}
+
+.lecteur
+{   
+    position: absolute;
+    top: 170px;
+    left: 70px;
+    width: 250px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: rgba(64, 64, 224, 0.075);
+    box-shadow: 0 50px 80px rgba(0,0,0, 0.25);
+}
+
+.lecteur .cover
+{
+    position: relative;
+    width: 100%;
+    height: 224px;
+}
+
+img:hover
+{
+    background-color: rgba(64, 64, 224, 0.308);
+}
+
+.lecteur .cover img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.div .cover img
+{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 200px;
+}
+
+.lecteur audio
+{
+    width: 100%;
+    outline: none;
+}
+
+audio
+{
+    color: rgba(64, 64, 184, 0.445);
+    margin-top: 170px;
+}
