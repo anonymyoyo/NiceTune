@@ -32,7 +32,18 @@
 
 body
 {
-    background: linear-gradient(45deg, rgb(64, 64, 224), rgb(255, 255, 255));
+    /* background-image: url(media/imgs/images/Bg.png); */
+    background-image: url(../media/imgs/images/Bg.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+.logo
+{
+    width: 70px;
+    cursor: pointer;
+    margin-top: 4px;
 }
 
 .corps
@@ -72,7 +83,7 @@ body
     padding: 58px;
     transform: translate(-500px);
     transition: 0.5s;
-    background-color: rgb(64, 64, 224);
+    background-color: rgba(224, 64, 197, 0.473);
 }
 
 .menu li
@@ -141,7 +152,7 @@ noter bien ce n'est que la partie fontend */
     top: 0px;
     left: 300px;
     width: 250px;
-    height: 30px;
+    height: 1s0px;
     border-radius: 20px 20px 20px 20px;
     background-color: rgba(64, 64, 224, 0.075);
     box-shadow: 0 50px 80px rgba(0,0,0, 0.25);
@@ -173,6 +184,7 @@ noter bien ce n'est que la partie fontend */
 img:hover
 {
     background-color: rgba(64, 64, 224, 0.308);
+    cursor: pointer;
 }
 
 .lecteur .cover img
@@ -186,11 +198,16 @@ img:hover
     border-radius: 20px 20px 20px 20px;
 }
 
+/* .div img
+{
+    
+} */
+
 .div .cover img
 {
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 20px 20px;
     width: 100%;
-    height: 200px;
+    height: 100%;
 }
 
 .lecteur audio
@@ -203,4 +220,56 @@ audio
 {
     color: rgba(64, 64, 184, 0.445);
     margin-top: 170px;
+}
+
+/* 
+-------------------------------------------------------------------------
+
+stylisation de la page playlist
+
+--------------------------------------------------------------------------
+*/
+
+.contenus
+{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+}
+
+.col-gauche
+{
+    margin-left: 6%;
+}
+
+.col-gauche h1
+{
+    font-size: 90px;
+    color: aliceblue;
+    line-height: 110px;
+    float: left;
+    text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.473);
+}
+
+.col-droite
+{
+    float: right;
+    margin: 6%;
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+}
+
+.col-droite p
+{
+    font-size: 19px;
+    color: aliceblue;
+    font-weight: 400;
+    margin: 14px;
+}
+
+#btnplay
+{
+    width: 80px;
+    cursor: pointer;
 }
