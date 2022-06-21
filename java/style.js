@@ -3,15 +3,25 @@ var menu = document.querySelector('.menu');
 
 // creation de l'evenement de click sous-forme d'une fonction
 
-// logo.addEventListener('click', function()
-// {
-//     menu.classList.toggle('showmenu')
-// });
+ logo.addEventListener('click', function()
+ {
+     menu.classList.toggle('showmenu')
+ });
 
-// var MaMusique = document.getElementById("#MaMusique");
-// var btnplay = document.getElementById("#btnplay");
+//Animation du boutton play pour pouvoir jouer de la musique
 
-// btnplay.onclick = function()
-// {
-//     MaMusique.onplay();
-// }
+
+ var MaMusique = document.getElementById("MaMusique");
+ var btnplay = document.getElementById("btnplay");
+
+ 
+ btnplay.onclick = function(){
+    if (MaMusique.paused) {
+        MaMusique.play();
+
+        btnplay.src = "media/imgs/images/pause.png"
+    } else {
+        MaMusique.pause();
+        btnplay.src = "media/imgs/images/play.png"
+    }
+}

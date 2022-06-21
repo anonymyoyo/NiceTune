@@ -52,7 +52,8 @@
 
             <div class="contenus">
                 <div class="col-gauche">
-                    <h1>Ma PlayList</h1>
+                    <img src="media/imgs/urielle.jpg" class="CoverPlaylist" alt="">
+                     <h1>Ma PlayList</h1>
                 </div>
                 <div class="col-droite">
                     <p>Jouer La Musique</p>
@@ -60,8 +61,8 @@
                 </div>
             </div>
         </div>
-        <audio src="" id="MaMusique">
-            <source src="media/sons/Dadju - Anonyme.mp3">
+        <audio id="MaMusique">
+            <source src="media/sons/Dadju - Toko Toko.mp3">
         </audio>
     </div>
     <ul class="menu">
@@ -71,16 +72,6 @@
         <li><a href="#"><i class="fa-solid fa-heart-circle-check"></i>  Favoris & Telechargements<i class="fa-solid fa-arrow-down-to-arc"></i></a></li>
         <li><a href="#"><i class="fa-solid fa-compact-disc"></i>  Abonement</a></li>
     </ul>
-    <script>
-
-var MaMusique = document.getElementById("#MaMusique");
-var btnplay = document.getElementById("#btnplay");
-
-btnplay.onclick = function()
-{
-    MaMusique.onplay();
-}
-    </script>
     <script src="java/style.js"></script>
 
 </body>
